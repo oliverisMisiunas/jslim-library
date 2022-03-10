@@ -1,0 +1,22 @@
+{
+  "name": "jslim-library",
+  "version": "0.1.0",
+  "description": "JSlim library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oliverisMisiunas/jslim-library.git"
+  },
+  "keywords": [
+    "jslim"
+  ],
+  "author": "Oliveris Misiūnas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oliverisMisiunas/jslim-library/issues"
+  },
+  "homepage": "https://github.com/oliverisMisiunas/jslim-library#readme"
+}
