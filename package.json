@@ -1,6 +1,6 @@
 {
   "name": "jslim-library",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JSlim library",
   "main": "index.js",
   "scripts": {
@@ -18,5 +18,5 @@
   "bugs": {
     "url": "https://github.com/oliverisMisiunas/jslim-library/issues"
   },
-  "homepage": "https://github.com/oliverisMisiunas/jslim-library#readme"
+  "homepage": "https://www.jslim.org/"
 }
