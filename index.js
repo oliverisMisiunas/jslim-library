@@ -206,6 +206,34 @@ function jslim() {
       }
     });
   }
+  
+  // Toggles when marked elements reach their specified position on screen.
+
+  const marked_elements = document.querySelectorAll('.scroll_mark')
+  var offsets = []
+  for(let count=0; count< marked_elements.length; count++){
+    var current_class_list = marked_elements[count].classList
+    let offset_marker = false
+    current_class_list.forEach(element=>{
+      if(element.includes('scroll_offset_')){
+        let offset_distance = element.replace(/\D/g, "")   //Gets the number part inside 'scroll_offset_<integer>'
+        offsets.push(offset_distance)
+        offset_marker = true
+      }
+    })
+    if(offset_marker===false){offsets.push('0')}
+  }
+  console.log(offsets)
+  document.addEventListener('scroll', check_scroll_marker)
+  function check_scroll_marker(){
+    for(let count=0; count< marked_elements.length; count++){
+      let distance_from_element_to_top = marked_elements[count].getBoundingClientRect().top
+      let screen_height = window.innerHeight
+      if(distance_from_element_to_top <= screen_height - offsets[count]){
+        marked_elements[count].classList.add('.scroll_mark_reached')
+      }
+    }
+  }
 }
 
 export default jslim;
