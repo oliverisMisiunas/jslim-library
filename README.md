@@ -1,13 +1,24 @@
 ﻿# [JSlim library](https://www.jslim.org/)
 
- Install JSLim with npm:
+## Install JSLim
 
-## npm i jslim-library
+Ensure that Node is installed on your system.
 
- Full installation instructions can be found [here](https://www.jslim.org/docs).
+`npm i jslim-library`
+
+## Using JSlim in your code
+
+Include it in your HTML
+
+```html
+<body>
+
+    <script type="module" src="/node_modules/jslim-library/src/index.js"></script>
+</body>
+```
 
 ## Contributing
 
-Adding new functionality to to JSlim is as easy as creating a new module in the `/src/modules/` directory. Import the new module in `/src/plugin/JSlim.js` to use it.
+Fork the repo and submit a pull request when your changes are ready.
 
-This project is especially good for beginner to intermediate developers, since there will always be room for new ideas in JSlim, and you won't have to familiarize yourself with an enormous amount of code before contributing. You can read more about contributing to JSlim [here](https://www.jslim.org/howtoopensource)
+Make sure to follow the existing project structure, for example, by creating a new module in `/src/modules/YourNewFile.js` and then importing your new module in `/src/plugin/JSlim.js`
