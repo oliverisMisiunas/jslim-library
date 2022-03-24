@@ -31,6 +31,6 @@
     "lint-staged": "^12.3.7"
   },
   "lint-staged": {
-    "*.js": ["prettier --write", "git add"]
+    "*.js": ["prettier --write", "npm run lint:js", "git add"]
   }
 }
