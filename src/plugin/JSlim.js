@@ -1,14 +1,14 @@
-import AddOnClick from "./modules/AddOnClick";
-import CenterElements from "./modules/CenterElement";
-import ClassOnHover from "./modules/ClassOnHover";
-import CreateVariable from "./modules/CreateVariable";
-import DisplayDate from "./modules/DisplayDate";
-import PushToArray from "./modules/PushToArray";
-import RemoveOnClick from "./modules/RemoveOnClick";
-import ScrollToPos from "./modules/ScrollToPos";
-import ScrollToTop from "./modules/ScrollToTop";
-import ToggleOnClick from "./modules/ToggleOnClick";
-import ToggleOnScroll from "./modules/ToggleOnScroll";
+import AddOnClick from "./modules/AddOnClick/AddOnClick.js";
+import CenterElements from "./modules/CenterElement/CenterElement.js";
+import ClassOnHover from "./modules/ClassOnHover/ClassOnHover.js";
+import CreateVariable from "./modules/CreateVariable/CreateVariable.js";
+import DisplayDate from "./modules/DisplayDate/DisplayDate.js";
+import PushToArray from "./modules/PushToArray/PushToArray.js";
+import RemoveOnClick from "./modules/RemoveOnClick/RemoveOnClick.js";
+import ScrollToPos from "./modules/ScrollToPos/ScrollToPos.js";
+import ScrollToTop from "./modules/ScrollToTop/ScrollToTop.js";
+import ToggleOnClick from "./modules/ToggleOnClick/ToggleOnClick.js";
+import ToggleOnScroll from "./modules/ToggleOnScroll/ToggleOnScroll.js";
 
 function JSlim() {
   CenterElements();
