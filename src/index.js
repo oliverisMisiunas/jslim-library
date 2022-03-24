@@ -1,3 +1,3 @@
-import JSlim from "./plugin/JSlim";
+import JSlim from "./plugin/JSlim.js";
 
 JSlim();
