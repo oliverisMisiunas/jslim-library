@@ -223,7 +223,6 @@ function jslim() {
     })
     if(offset_marker===false){offsets.push('0')}
   }
-  console.log(offsets)
   document.addEventListener('scroll', check_scroll_marker)
   function check_scroll_marker(){
     for(let count=0; count< marked_elements.length; count++){
