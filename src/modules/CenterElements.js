@@ -16,6 +16,7 @@ function CenterElements() {
   }
   for (let i = 0; i < flexRow.length; i++) {
     let row = CenterElement(flexRow[i]);
+    row.style.flexDirection = 'row';
   }
 }
 
