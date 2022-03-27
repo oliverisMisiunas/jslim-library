@@ -1,5 +1,5 @@
 function ScrollToTop() {
-  let scrollTopBtn = document.getElementsByClassName("jscrolltop");
+  const scrollTopBtn = document.getElementsByClassName("jscrolltop");
 
   for (let i = 0; i < scrollTopBtn.length; i++) {
     scrollTopBtn[i].addEventListener("click", () => {

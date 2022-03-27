@@ -1,15 +1,15 @@
 function ScrollToPos() {
-    let jscrollto = document.getElementsByClassName("jscrollto");
+    const jscrollto = document.getElementsByClassName("jscrollto");
 
     for (let i = 0; i < jscrollto.length; i++) {
         jscrollto[i].addEventListener("click", () => {
-            let classNames = jscrollto[i].className.split(" ");
-            let scrPos = classNames.indexOf("jscrollto");
-            let elementas = document.getElementById(`${classNames[scrPos + 1]}`);
-            let elemOff = elementas.offsetTop;
+            const classNames = jscrollto[i].className.split(" ");
+            const scrPos = classNames.indexOf("jscrollto");
+            const elementas = document.getElementById(`${classNames[scrPos + 1]}`);
+            const elemOff = elementas.offsetTop;
 
-            if (classNames[scrPos + 2] == "jsmooth") {
-                if (classNames[scrPos + 3] == "jsetpx") {
+            if (classNames[scrPos + 2] === "jsmooth") {
+                if (classNames[scrPos + 3] === "jsetpx") {
                     window.scrollTo({
                         left: 0,
                         top: elemOff - classNames[scrPos + 4],
@@ -18,7 +18,7 @@ function ScrollToPos() {
                 } else {
                     window.scrollTo({ left: 0, top: elemOff, behavior: "smooth" });
                 }
-            } else if (classNames[scrPos + 2] == "jsetpx") {
+            } else if (classNames[scrPos + 2] === "jsetpx") {
                 window.scrollTo(0, elemOff - classNames[scrPos + 3]);
             } else {
                 window.scrollTo(0, elemOff);

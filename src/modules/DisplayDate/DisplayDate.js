@@ -1,11 +1,11 @@
 function DisplayDate() {
-    let jmdy = document.getElementsByClassName("jdate-mdy");
-    let jdmy = document.getElementsByClassName("jdate-dmy");
-    let jymd = document.getElementsByClassName("jdate-ymd");
-    let jtoday = new Date();
-    let jyear = jtoday.getFullYear();
-    let jmonth = jtoday.getMonth() + 1;
-    let jday = jtoday.getDate();
+    const jmdy = document.getElementsByClassName("jdate-mdy");
+    const jdmy = document.getElementsByClassName("jdate-dmy");
+    const jymd = document.getElementsByClassName("jdate-ymd");
+    const jtoday = new Date();
+    const jyear = jtoday.getFullYear();
+    const jmonth = jtoday.getMonth() + 1;
+    const jday = jtoday.getDate();
 
     for (let i = 0; i < jmdy.length; i++) {
         jmdy[i].textContent = `${jmonth}/${jday}/${jyear}`;

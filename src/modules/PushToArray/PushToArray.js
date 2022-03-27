@@ -1,14 +1,14 @@
 function PushToArray() {
-    let jinputArr = [];
-    let jinputBox = document.getElementsByClassName("jinput");
-    let jinputBtn = document.getElementsByClassName("jinput-btn");
-    let jinputBoxArr = [];
+    const jinputArr = [];
+    const jinputBox = document.getElementsByClassName("jinput");
+    const jinputBtn = document.getElementsByClassName("jinput-btn");
+    const jinputBoxArr = [];
 
     for (let i = 0; i < jinputBox.length; i++) {
         jinputBoxArr.push(jinputBox[i]);
     }
 
-    let jinputBtnArr = [];
+    const jinputBtnArr = [];
 
     for (let i = 0; i < jinputBtn.length; i++) {
         jinputBtnArr.push(jinputBtn[i]);

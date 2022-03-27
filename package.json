@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint:js": "eslint \"src/**/*.js\"",
     "lint:js:fix": "eslint --fix \"src/**/*.js\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "build": "webpack --mode production",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -23,14 +25,22 @@
   },
   "homepage": "https://www.jslim.org/",
   "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "babel-loader": "^8.2.4",
     "eslint": "^8.11.0",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-import": "2.25.4",
     "husky": "^7.0.4",
-    "lint-staged": "^12.3.7"
+    "lint-staged": "^12.3.7",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2"
   },
   "lint-staged": {
-    "*.js": ["prettier --write", "npm run lint:js", "git add"]
+    "*.js": [
+      "prettier --write",
+      "npm run lint:js",
+      "git add"
+    ]
   }
 }

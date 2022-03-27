@@ -1,12 +1,12 @@
 function ClassOnHover() {
-    let jhover = document.getElementsByClassName("jhover");
-    let jhoverArr = [];
+    const jhover = document.getElementsByClassName("jhover");
+    const jhoverArr = [];
 
     for (let i = 0; i < jhover.length; i++) {
-        let arr = jhover[i].className.split(" ").indexOf("jhover");
-        let vari = jhover[i].className.split(" ")[arr + 1];
+        const arr = jhover[i].className.split(" ").indexOf("jhover");
+        const vari = jhover[i].className.split(" ")[arr + 1];
         jhoverArr.push(vari);
-        let newNam = jhoverArr[i].substring(1);
+        const newNam = jhoverArr[i].substring(1);
         jhover[i].addEventListener("mouseover", () => {
             jhover[i].classList.add(newNam);
         });

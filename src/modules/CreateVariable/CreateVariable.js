@@ -1,10 +1,10 @@
 function CreateVariable() {
-    let gets = document.getElementsByClassName("jget");
-    let nameArr = [];
+    const gets = document.getElementsByClassName("jget");
+    const nameArr = [];
 
     for (let i = 0; i < gets.length; i++) {
-        let arr = gets[i].className.split(" ").indexOf("jget");
-        let vari = gets[i].className.split(" ")[arr + 1];
+        const arr = gets[i].className.split(" ").indexOf("jget");
+        const vari = gets[i].className.split(" ")[arr + 1];
         nameArr.push(vari);
     }
 

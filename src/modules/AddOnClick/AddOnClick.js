@@ -1,12 +1,12 @@
 function AddOnClick() {
-    let ed = document.getElementsByClassName("jadd");
-    let edArr = [];
+    const ed = document.getElementsByClassName("jadd");
+    const edArr = [];
 
     for (let i = 0; i < ed.length; i++) {
-        let arr = ed[i].className.split(" ").indexOf("jadd");
-        let vari = ed[i].className.split(" ")[arr + 1];
+        const arr = ed[i].className.split(" ").indexOf("jadd");
+        const vari = ed[i].className.split(" ")[arr + 1];
         edArr.push(vari);
-        let newNam = edArr[i].substring(1);
+        const newNam = edArr[i].substring(1);
         ed[i].addEventListener("click", () => {
             ed[i].classList.add(newNam);
         });
