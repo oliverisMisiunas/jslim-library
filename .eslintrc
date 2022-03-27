@@ -16,6 +16,6 @@
   "rules": {
     "no-plusplus": "off",
     "no-param-reassign": "off",
-    "prefer-destructuring": "warn"
+    "prefer-destructuring": "off"
   }
 }
