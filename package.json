@@ -42,8 +42,7 @@
   "lint-staged": {
     "*.js": [
       "prettier --write",
-      "npm run lint:js:fix",
-      "git add"
+      "npm run lint:js:fix"
     ]
   }
 }
