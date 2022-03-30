@@ -1,37 +1,40 @@
-import AddOnClick from '../modules/AddOnClick/AddOnClick.js';
-import CenterElements from '../modules/CenterElements/CenterElements.js';
-import ClassOnHover from '../modules/ClassOnHover/ClassOnHover.js';
-import CreateVariable from '../modules/CreateVariable/CreateVariable.js';
-import DisplayDate from '../modules/DisplayDate/DisplayDate.js';
-import PushToArray from '../modules/PushToArray/PushToArray.js';
-import RemoveOnClick from '../modules/RemoveOnClick/RemoveOnClick.js';
-import ScrollToPos from '../modules/ScrollToPos/ScrollToPos.js';
-import ScrollToTop from '../modules/ScrollToTop/ScrollToTop.js';
-import ToggleOnClick from '../modules/ToggleOnClick/ToggleOnClick.js';
-import ToggleOnScroll from '../modules/ToggleOnScroll/ToggleOnScroll.js';
+import AddOnClick from "../modules/AddOnClick/AddOnClick.js";
+import CenterElements from "../modules/CenterElements/CenterElements.js";
+import ClassOnHover from "../modules/ClassOnHover/ClassOnHover.js";
+import CreateVariable from "../modules/CreateVariable/CreateVariable.js";
+import DisplayDate from "../modules/DisplayDate/DisplayDate.js";
+import PushToArray from "../modules/PushToArray/PushToArray.js";
+import RemoveOnClick from "../modules/RemoveOnClick/RemoveOnClick.js";
+import ScrollToPos from "../modules/ScrollToPos/ScrollToPos.js";
+import ScrollToTop from "../modules/ScrollToTop/ScrollToTop.js";
+import ToggleOnClick from "../modules/ToggleOnClick/ToggleOnClick.js";
+import ToggleOnScroll from "../modules/ToggleOnScroll/ToggleOnScroll.js";
+import ScrollToBottom from "../modules/ScrollToBottom";
 
 function JSlim() {
-  CenterElements();
+    CenterElements();
 
-  DisplayDate();
+    DisplayDate();
 
-  CreateVariable();
+    CreateVariable();
 
-  ClassOnHover();
+    ClassOnHover();
 
-  PushToArray();
+    PushToArray();
 
-  ToggleOnScroll();
+    ToggleOnScroll();
 
-  ScrollToTop();
+    ScrollToTop();
 
-  ToggleOnClick();
+    ToggleOnClick();
 
-  RemoveOnClick();
+    RemoveOnClick();
 
-  AddOnClick();
+    AddOnClick();
 
-  ScrollToPos();
+    ScrollToPos();
+
+    ScrollToBottom();
 }
 
 export default JSlim;
