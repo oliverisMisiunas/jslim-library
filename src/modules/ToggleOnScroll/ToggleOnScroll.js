@@ -1,13 +1,13 @@
 function ToggleOnScroll() {
-  let jscrollpos = document.getElementsByClassName("jscrollpos");
+  const jscrollpos = document.getElementsByClassName("jscrollpos");
 
   for (let i = 0; i < jscrollpos.length; i++) {
-    let arr = jscrollpos[i].className.split(" ");
-    let scrPos = arr.indexOf("jscrollpos");
+    const arr = jscrollpos[i].className.split(" ");
+    const scrPos = arr.indexOf("jscrollpos");
 
-    let pxStart = arr[scrPos + 1];
-    let pxStop = arr[scrPos + 2];
-    let scrollClass = arr[scrPos + 3].substring(1);
+    const pxStart = arr[scrPos + 1];
+    const pxStop = arr[scrPos + 2];
+    const scrollClass = arr[scrPos + 3].substring(1);
 
     window.addEventListener("scroll", () => {
       if (window.scrollY > pxStart && window.scrollY < pxStop) {
