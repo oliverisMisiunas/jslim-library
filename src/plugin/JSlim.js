@@ -9,6 +9,7 @@ import ScrollToPos from "../modules/ScrollToPos/ScrollToPos";
 import ScrollToTop from "../modules/ScrollToTop/ScrollToTop";
 import ToggleOnClick from "../modules/ToggleOnClick/ToggleOnClick";
 import ToggleOnScroll from "../modules/ToggleOnScroll/ToggleOnScroll";
+import ScrollToBottom from "../modules/ScrollToBottom";
 
 function JSlim() {
     CenterElements();
@@ -32,6 +33,8 @@ function JSlim() {
     AddOnClick();
 
     ScrollToPos();
+
+    ScrollToBottom();
 }
 
 export default JSlim;
